@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissors</title>
+    <!-- font link -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,200;0,300;0,400;0,700;1,700;1,800&display=swap" rel="stylesheet">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="powers-score-container">
+        <div class="powers">
+            <img src="images/logo.svg" alt="" srcset="">
+        </div>
+        <div class="score-box">
+            <h3>Score</h3>
+            <h2 id="score">0</h2>
+        </div>
+
+    </div>
+    <main id="main" class="slideInUp">
+        <button class="bg-circle paper" data-choice="paper"> <img  id="paper" src="images/icon-paper.svg" alt=""></button>
+        <button class="bg-circle rock " data-choice="rock"> <img id="rock" src="images/icon-rock.svg" alt=""></button>
+        <button class="bg-circle scissors " data-choice="scissors"> <img id="scissors" src="images/icon-scissors.svg" alt=""></button>
+
+    </main>
+
+
+
+    <!-- rule-card -->
+    <div id="rule-card" class="rule-card">
+        <div class="rule-header">
+            <h2>RULES</h2>
+            <img id="close-rules" src="images/icon-close.svg" class="cross" alt="" srcset="">
+        </div>
+
+        <img src="images/image-rules.svg" class="rule-card-img" alt="" srcset="">
+
+    </div>
+    <button class="rules-btn">RULES</button>
+
+    <div id="selected" class="selection">
+        <div class="picked ">
+            <h2 style="margin-right: 2rem;"> YOU PICKED </h2>
+            <button id="player-select">
+                <img id="user-image" src="images/icon-paper.svg" alt="">
+           
+</button>
+        </div>
+
+
+        <!-- result section -->
+
+        <div class="result-container">
+            <h2 id="result" class="text-focus-in">YOU WIN</h2>
+            <button id="play-again" class="play-btn tada">
+           PLAY AGAIN
+            </button>
+        </div>
+
+        <div class="picked  ">
+            <h2>THE HOUSE PICKED</h2>
+            <button id="comp-select">
+                <img id="comp-image" src="images/icon-paper.svg" alt="">
+            </button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
